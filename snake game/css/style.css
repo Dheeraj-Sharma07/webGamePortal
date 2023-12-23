@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    /*background: url("../image/bg.jpg");*/
+     background: radial-gradient(circle at center,orange,red);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 90px;
+    right: 130px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 150px;
+    right: 120px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+#board{
+    /*background: linear-gradient(rgb(167, 231, 167), rgb(184, 184, 100));*/
+    background: radial-gradient(circle at center , #ffff66 6%, #ff9933 100%);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(233, 180, 180), rgb(194, 194, 83));
+    border: 2px solid rgb(56, 15, 56);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: rgb(27, 10, 54);
+    border: .25vmin solid white;
+    border-radius: 2px;
+}
+
+.food{
+    background: linear-gradient(red, rgb(44, 6, 44));
+    border: .25vmin solid black;
+    border-radius: 4px;
+}
+.ballonimg
+{
+    height: 500px;
+    width: 200px;
+    margin-right:1200px ;   
+    
+}
+.ballonimg2
+{
+    position: fixed;
+    height: 500px;
+    width: 200px;
+    margin-left:1400px ; 
+    margin-top: -500px;  
+    
+}
+.ballon
+{
+    position: fixed;
+    top: 250px;
+    left: 80px;
+    height: 500px;
+    width: 200px;
+    transform: scaleX(-1);
+    
+}

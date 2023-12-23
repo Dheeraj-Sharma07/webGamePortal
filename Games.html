@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Games Here</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			padding: 0rem 1rem;
+			background: #1a1a1a;
+		}
+		.container{
+			width: 100%;
+			height: 100vh;
+			/*background: #fff;*/
+			box-shadow: 0 0 20px 1px #0005;
+			text-align: center;
+		}
+		.heading{
+			color: white;
+			padding-top: 2rem;
+			margin: 2rem 0;
+		}
+		.flex{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex:1 1 33.3%;
+			flex-wrap: wrap;
+		}
+		.col{
+			/*background: white;*/
+			/*border: 1px solid red;*/
+			padding: 10px;
+			width: 33%;
+			/*height: 20rem;*/
+		}
+		.col .card{
+			position: relative;
+			/*padding: 16px;*/
+			background: #fff;
+			border-radius: 12px;
+			overflow: hidden;
+		}
+		.col .card img{
+			width: 100%;
+			height: 120%;
+		}
+		.col .card .details{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			background: #000b;
+			backdrop-filter: blur(2px);
+			padding: 2rem;
+			text-align: center;
+			transition: all 0.3s ease;
+		}
+		.details p{
+			color: #fffb;
+			font-family: 'Consolas';
+			margin-bottom: 1rem;
+		}
+		.details button{
+			border: none;
+			outline: none;
+			background: linear-gradient(white,grey);
+			padding: 0.6rem 1.2rem;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.card:hover .details{
+			top: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="heading">Games</h1>
+		<div class="flex">
+			<div class="col">
+				<div class="card">
+					<img src="images/tictac.jpeg" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero a praesentium nemo similique velit explicabo, quaerat ad, debitis, illo beatae atque repellat cumque! Tempora modi, temporibus illo culpa soluta consequuntur.</p>
+						<a href="tictac.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/rgb.jpeg" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Debitis vero nulla excepturi numquam nesciunt earum voluptas at, in necessitatibus, sit officia, repudiandae facere, recusandae saepe. Consequuntur ad, nobis deleniti velit.</p>
+						<a href="Color guessing game/index.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/flyhigh.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis fugiat vitae, sunt modi consequuntur natus. Voluptate distinctio, porro omnis, architecto voluptatibus, reprehenderit dolores dolorum accusamus nostrum quis necessitatibus nihil.</p>
+						<a href="FlyHigh/flyhigh.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/snake.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aspernatur, tempora ea atque rerum nobis dignissimos aliquid. Cupiditate, soluta. Cum repudiandae sed ratione est ipsum autem amet voluptatem libero odit.</p>
+						<a href="snake game/snake game real.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/snake2.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt distinctio porro fugiat eos eligendi totam, blanditiis voluptates accusantium voluptatem nihil ut ea ipsum. Eum voluptatum, vero et id, numquam earum?</p>
+						<a href="snake game/index.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/ballon.jpeg" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae, velit dolor praesentium quos qui maiores doloribus ut eaque perspiciatis non sed animi nemo hic, repudiandae sunt atque, vitae, tempore!</p>
+						<a href="ballon.html"><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col">
+				<div class="card">
+					<img src="images/tictac.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Perferendis molestiae sapiente expedita necessitatibus dicta exercitationem quaerat voluptatum debitis? Ipsum obcaecati ipsam repudiandae inventore iure minima aliquam fuga dolor perspiciatis cum.</p>
+						<a href=""><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/tictac.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Ut repudiandae maxime quia earum excepturi eos ducimus quas amet? Iste nulla, temporibus, facilis excepturi sapiente sit possimus tempore voluptatem. Itaque, explicabo.</p>
+						<a href=""><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/tictac.png" alt="">
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil maxime odio dolor accusamus amet suscipit modi fugiat facilis, delectus sapiente dolorem voluptate aliquam libero. Minima, at ipsam exercitationem!</p>
+						<a href=""><button>Play</button></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="images/tictac.png" alt="">
+					<div class="details">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis pariatur omnis quasi, magni, quibusdam autem? Modi quas dolorem suscipit, fuga maiores alias obcaecati omnis vero in minima vel officiis et.</p>
+						<a href=""><button>Play</button></a>						
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</body>
+</html>

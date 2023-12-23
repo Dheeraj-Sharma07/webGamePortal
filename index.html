@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Game Portal - Play Games here</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			user-select: none;
+		}
+		body{
+			font-family: 'Gabriola';
+			background: #1a1a1a;
+		}
+		.title {
+			padding-top: 2rem;
+			color: white;
+			font-size: 60px;
+			text-align: center;
+			text-shadow: 5px 5px 2px #0002;
+		}
+		.title:after{
+			content: '';
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			background: url('images/fire.jpeg') no-repeat;
+			background-size: cover;
+		}
+		.title span{
+			color: red;
+		}
+		.flex{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.text{
+			padding: 2rem 2rem 2rem 4rem;
+			text-align: left;
+			color: #ddd;
+		}
+		.text .bg{
+			position: absolute;
+			top: 0;
+			left: 65%;
+			width: 100%;
+			height: 100%;
+			background: url('images/dices.png') no-repeat;
+			background-size: 58%;
+			opacity: 0.08;
+			z-index: -100;
+			transform-origin: center;
+			animation: fade-toggle 10s linear infinite alternate;
+		}
+		.text .heading{
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+		.text p{
+			color: #888;
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
+		}
+		.text button{
+			width: 40%;
+			cursor: pointer;
+			padding: 2rem 1rem;
+			border: none;
+			outline: none;
+			background: url('images/play button.jpeg') no-repeat;
+			background-size: 70%;
+			background-position: left;
+		}
+		.column{
+			position: relative;
+			flex: 1;
+		}
+		.image{
+			margin-left: 5rem;
+			width: 24rem;
+			transition: all 0.3s ease;
+		}
+		.image:hover{
+			filter: drop-shadow(0 0 0.5rem #fffa);
+		}
+		@keyframes fade-toggle {
+			from{
+				/*opacity: 0;*/
+			}
+			to{
+				transform: scale(1.2);
+				/*opacity: 0.08;*/
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">
+		<span>Web Games!</span>
+		Portal
+	</h1>
+	<section class="flex">
+		<div class="text column">
+			<h1 class="heading">Gamer? We got you something!</h1>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Dolorum obcaecati molestias itaque ex perferendis aliquam, aperiam hic neque animi quaerat nihil, iusto perspiciatis harum distinctio error molestiae illum quo. Perspiciatis.<span style="color:white;padding-left: 5px;">Read more...</span></p>
+			<div class="bg"></div>
+			<a href="Games.html"><button>&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+		</div>
+		<div class="column">
+			<a href="Games.html">
+				<img class="image" src="images/folder.png" alt="">
+			</a>				
+		</div>
+	</section>
+</body>
+</html>
